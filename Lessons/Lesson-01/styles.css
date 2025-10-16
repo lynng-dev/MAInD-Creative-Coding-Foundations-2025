@@ -1,0 +1,41 @@
+header{
+    margin-left: 40px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 18px;
+    font-style: oblique;
+}
+
+ul{
+    list-style-type: style circle;
+    border: 1px;
+    border-radius: 10px;
+    border-color: gainsboro;
+    border-style:dotted;
+}
+
+img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.on-sale{
+    background-color: yellow;
+    width: 350px;
+    height: 270px;
+    border-radius: 10px;
+}
+
+a{
+    color: black;
+}
+
+a:hover h2 {
+    color: blueviolet;
+}
