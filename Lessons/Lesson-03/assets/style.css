@@ -1,0 +1,114 @@
+/* general */
+html {
+    font-size: 16px;
+    font-family:monospace;
+    background-color:azure;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+input, button{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font: monospace;
+    background: none;
+    color: inherit;
+    outline: none;
+    box-sizing: border-box;
+}
+
+button{
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/* input & add button */
+#add-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#task-input {
+    width: 100%;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
+/* view list toggle */
+#view-toggle-container{
+    display: flex;
+    gap: 1rem;
+}
+
+.toggle-btn{
+    /* background-color: azure;
+    color:black; */
+    width:50%
+}
+
+
+/* to-do list*/
+/* card view*/
+.card-view{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+li{
+    display: block;
+    width: 100%;
+}
+
+.card-view li{
+    background-color:lightgoldenrodyellow ;
+    height: 3rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+
+/* list view*/
+.list-view{
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem 1rem 1rem 2rem;
+    background-color:lightgoldenrodyellow ;
+}
+
+.list-view li {
+    height: 2rem;
+    display: list-item;
+}
+
+
+/*button hover*/
+button:hover{
+    cursor:crosshair;
+    background-color: black;
+    color:azure;
+}
+
+/* .toggle-btn:hover{
+    background-color: black;
+    color:azure;
+}
+#add-btn:hover {
+    background-color: black;
+    color:azure;
+} 
+#add-btn:active {
+    background-color: lightgoldenrodyellow;
+    color:black;
+}  */
