@@ -8,6 +8,10 @@ Starting from the concept of a pinboard, implement a web page that:
 - allows the switch between two views (at least)
 
 # Final result
+![first screenshot] (DOC/)
+![second screenshot] (DOC/)
+![third screenshot] (DOC/)
+![fourth screenshot] (DOC/)
 
 # Project description
 
