@@ -1,4 +1,6 @@
-# Brief
+# Assignment 01
+
+## Brief
 
 Starting from the concept of a pinboard, implement a web page that:
 
@@ -7,20 +9,24 @@ Starting from the concept of a pinboard, implement a web page that:
 - allows the user to customize elements (i.e. colors, size)
 - allows the switch between two views (at least)
 
-# Final result
+## Final result
+![first screenshot] (DOC/)
+![second screenshot] (DOC/)
+![third screenshot] (DOC/)
+![fourth screenshot] (DOC/)
 
-# Project description
+## Project description
 
 
-# Block diagram
+## Block diagram
 
 
-# Function
+## Function
 - name of function
 - arguments
 - description
 - what it returns
 
-# Content & data sources
+## Content & data sources
 
   
