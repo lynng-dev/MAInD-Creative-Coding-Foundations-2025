@@ -22,7 +22,7 @@ Starting from the concept of a pinboard, implement a web page that:
 graph TD
     A[index.html (The Page)] --> B(<body>);
     
-    Graph Header and Controls
+    #Graph Header and Controls
         B --> C(<header>);
         C --> C1(<h1>My Food Journal</h1>);
         C --> C2(<form id="add-meal-form">);
@@ -40,7 +40,7 @@ graph TD
         style C3 fill:#ccccff,stroke:#009
     end
 
-    Graph Main content
+    #Graph Main content
         B --> D(<main>);
         D --> D1(<ul id="meal-container" class="grid-view/list-view">);
         
@@ -52,7 +52,7 @@ graph TD
         style D1 fill:#ccffcc,stroke:#090
     end
 
-   Graph JavaScript interaction Flow
+   #Graph JavaScript interaction Flow
         C2d -->|Reads data, uses FileReader| D1;
         C3a & C3b -->|Toggles class| D1;
         D1a3 -->|Event Delegation| D1;
