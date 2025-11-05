@@ -80,7 +80,7 @@ Starting from the concept of a pinboard, implement a web page that:
 ##### add.Meal
 - Argument: none
 - Description: The main function for creating and adding a new meal card. It reads form data, checks for a file input, and uses the FileReader API to convert the local image file into a Data URL for immediate display in the <img> tag. Finally, it resets the form.
-- Returns: none
+- Returns: return (--> exits the function) if the imgInput does not contain a file, after showing an alert.
 
 ## Content & data sources
 none
