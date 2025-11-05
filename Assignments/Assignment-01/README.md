@@ -16,7 +16,7 @@ Starting from the concept of a pinboard, implement a web page that:
 ![fourth screenshot] (DOC/)
 
 ## Project description
-
+"My Food Journal" is a web application designed for users to easily track, categorize, and visualize their meals. Built purely with HTML, custom CSS, and JavaScript, the application focuses on providing a clean, responsive, and intuitive interface for quick data entry and meal management.
 
 ## Block diagram
 
@@ -62,5 +62,5 @@ Starting from the concept of a pinboard, implement a web page that:
 - what it returns
 
 ## Content & data sources
-
+none
   
