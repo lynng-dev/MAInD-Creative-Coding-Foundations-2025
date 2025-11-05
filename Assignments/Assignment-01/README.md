@@ -19,43 +19,37 @@ Starting from the concept of a pinboard, implement a web page that:
 
 
 ## Block diagram
+```mermaid
 graph TD
-    A[index.html (The Page)] --> B(<body>);
+    A[index.html] --> B(Body);
     
-    #Graph Header and Controls
+    Fraph Header & Controls
         B --> C(<header>);
-        C --> C1(<h1>My Food Journal</h1>);
         C --> C2(<form id="add-meal-form">);
         C --> C3(<div id="view-toggle-container">);
         
-        C2 --> C2a[Input: Meal name];
-        C2 --> C2b[Input: Meal image - type="file"];
-        C2 --> C2c[Select: Meal tag];
-        C2 --> C2d[Button: #add-btn];
+        C2 --> C2a[Input: Name];
+        C2 --> C2b[Input: Image: type="file"];
+        C2 --> C2c[Select: Tag];
+        C2 --> C2d[Button: Add meal];
         
-        C3 --> C3a[Button: #list-btn];
-        C3 --> C3b[Button: #grid-btn];
-        
-        style C2 fill:#ffcccc,stroke:#900
-        style C3 fill:#ccccff,stroke:#009
+        C3 --> C3a[Button: List View];
+        C3 --> C3b[Button: Grid View];
     end
 
-    #Graph Main content
+   Graph Main Content
         B --> D(<main>);
-        D --> D1(<ul id="meal-container" class="grid-view/list-view">);
-        
-        D1 --> D1a(<li class="meal-card" (Example/Dynamic)>);
+        D --> D1(<ul id="meal-container">);
+        D1 --> D1a(<li class="meal-card">);
         D1a --> D1a1[Image];
-        D1a --> D1a2[Meal Content (Title/Tag)];
+        D1a --> D1a2[Details];
         D1a --> D1a3[Button: .remove-btn];
-        
-        style D1 fill:#ccffcc,stroke:#090
     end
 
-   #Graph JavaScript interaction Flow
-        C2d -->|Reads data, uses FileReader| D1;
-        C3a & C3b -->|Toggles class| D1;
-        D1a3 -->|Event Delegation| D1;
+   Graph Logic Flow (JavaScript)
+        C2d -->|FileReader + Append| D1;
+        C3a & C3b -->|Toggle CSS Class| D1;
+        D1a3 -->|Remove Card| D1;
     end
 
 ## Function
