@@ -56,14 +56,30 @@ Starting from the concept of a pinboard, implement a web page that:
         end
 ```
 ## Function
-- name of function
-- arguments
-- description
-- what it returns
 
 ##### listButton.clickHandler
 - Argument: none
 - Description: toggles the display mode of the #meal-container to list-view. It removes the grid-view class, adds the list-view & updates the active state of the toggle buttons.
+- Returns: none
+
+##### gridButton.clickHandler
+- Argument: none
+- Description: toggles the display mode of the #meal-container to grid-view. It removes the list-view class, adds the grid-view & updates the active state of the toggle buttons.
+- Returns: none
+
+##### addForm.submitHandler
+- Argument: event
+- Description: handles the form submission. It calls event.preventDefault() to stop the page from reloading and then executes the addMeal() function.
+- Returns: none
+  
+##### mealContainer.clickHandler
+- Argument: event
+- Description: It listens for any click within the meal container. If the clicked element is a .remove-btn, it finds the closest parent <li> (the meal card) and removes it from the DOM.
+- Returns: none
+- 
+##### add.Meal
+- Argument: none
+- Description: The main function for creating and adding a new meal card. It reads form data, checks for a file input, and uses the FileReader API to convert the local image file into a Data URL for immediate display in the <img> tag. Finally, it resets the form.
 - Returns: none
 
 ## Content & data sources
