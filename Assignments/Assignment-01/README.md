@@ -19,39 +19,39 @@ Starting from the concept of a pinboard, implement a web page that:
 
 
 ## Block diagram
-```mermaid
 graph TD
     A[index.html] --> B(Body);
     
-    Fraph Header & Controls
-        B --> C(<header>);
-        C --> C2(<form id="add-meal-form">);
-        C --> C3(<div id="view-toggle-container">);
+    B --> C(Header);
+    B --> D(Main Content);
+    
+    subgraph User Input & Controls
+        C --> C1(Form: #add-meal-form);
+        C --> C2(Div: #view-toggle-container);
         
-        C2 --> C2a[Input: Name];
-        C2 --> C2b[Input: Image: type="file"];
-        C2 --> C2c[Select: Tag];
-        C2 --> C2d[Button: Add meal];
+        C1 --> C1a[Input: Name];
+        C1 --> C1b[Input: Image File];
+        C1 --> C1c[Select: Tag];
+        C1 --> C1d[Button: Add meal];
         
-        C3 --> C3a[Button: List View];
-        C3 --> C3b[Button: Grid View];
+        C2 --> C2a[Button: List View];
+        C2 --> C2b[Button: Grid View];
     end
-
-   Graph Main Content
-        B --> D(<main>);
-        D --> D1(<ul id="meal-container">);
+    
+    subgraph Meal Display Area
+        D --> D1(UL: #meal-container);
         D1 --> D1a(<li class="meal-card">);
+        
         D1a --> D1a1[Image];
-        D1a --> D1a2[Details];
+        D1a --> D1a2[Details: Title/Tag];
         D1a --> D1a3[Button: .remove-btn];
     end
-
-   Graph Logic Flow (JavaScript)
-        C2d -->|FileReader + Append| D1;
-        C3a & C3b -->|Toggle CSS Class| D1;
-        D1a3 -->|Remove Card| D1;
+    
+    subgraph JavaScript Logic Flow
+        C1d -.->|FileReader + Append| D1;
+        C2a & C2b -.->|Toggle Class| D1;
+        D1a3 -.->|Event Delegation| D1;
     end
-
 ## Function
 - name of function
 - arguments
