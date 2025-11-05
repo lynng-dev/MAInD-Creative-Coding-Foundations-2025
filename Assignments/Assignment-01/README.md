@@ -61,10 +61,10 @@ Starting from the concept of a pinboard, implement a web page that:
 - description
 - what it returns
 
-#listButton.clickHandler
-    - Argument: none
-    - Description: toggles the display mode of the #meal-container to list-view. It removes the grid-view class, adds the list-view & updates the active state of the toggle buttons.
-    - Returns: none
+# listButton.clickHandler
+- Argument: none
+- Description: toggles the display mode of the #meal-container to list-view. It removes the grid-view class, adds the list-view & updates the active state of the toggle buttons.
+- Returns: none
 
 ## Content & data sources
 none
