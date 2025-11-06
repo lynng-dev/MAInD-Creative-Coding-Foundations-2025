@@ -26,14 +26,31 @@
 
 
 // three
-const grade = 5; // 0 ... 6,4 is passed
+// const grade = 5; // 0 ... 6,4 is passed
 
-if (grade >=4){
-    console.log("You passed the course!");
-}
-    else {
-        console.log("You failed!");
-    }
+// if (grade >=4){
+//     console.log("You passed the course!");
+// }
+//     else {
+//         console.log("You failed!");
+//     }
+
+
+// if (grade ==6){
+//     console.log("Excellent");
+// }
+// else if (grade >=5 && grade < 6){
+//     console.log("Good")
+// }
+// else if (grade ==4 && grade <5){
+//     console.log("Sufficient")
+// }
+// else {
+//     console.log("Insufficient")
+// }
+
+//four
+let grade = 0; // 0 ... 6,4 is passed
 
 
 if (grade ==6){
@@ -44,6 +61,9 @@ else if (grade >=5 && grade < 6){
 }
 else if (grade ==4 && grade <5){
     console.log("Sufficient")
+}
+else if (grade > 6 || grade < 1){
+    console.log("Impossibol - wrong grade")
 }
 else {
     console.log("Insufficient")
