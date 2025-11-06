@@ -10,10 +10,10 @@ Starting from the concept of a pinboard, implement a web page that:
 - allows the switch between two views (at least)
 
 ## Final result
-![Mobile-List-view] (DOC/Mobile-List-view)
-![Mobile-Card-view] (DOC/Mobile-Card-view)
-![Desktop-List-view] (DOC/Desktop-List-view)
-![Desktop-Card-view] (DOC/Desktop-Card-view)
+![Mobile-List-view] (assets/doc/Mobile-List-view)
+![Mobile-Card-view] (assets/doc/Mobile-Card-view)
+![Desktop-List-view] (assets/doc/Desktop-List-view)
+![Desktop-Card-view] (assets/doc/Desktop-Card-view)
 
 ## Project description
 "My Food Journal" is a web application designed for users to easily track, categorize, and visualize their meals. Built purely with HTML, custom CSS, and JavaScript, the application focuses on providing a clean, responsive, and intuitive interface for quick data entry and meal management.
