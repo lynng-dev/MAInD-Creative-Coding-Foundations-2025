@@ -68,3 +68,16 @@ else if (grade > 6 || grade < 1){
 else {
     console.log("Insufficient")
 }
+
+
+switch(grade){
+    case 6:
+        console.log("Excellent");
+        breaj;
+    case 5: 
+        console.log("Good")
+
+    default:
+        console.log("undefined");
+        break;
+}
