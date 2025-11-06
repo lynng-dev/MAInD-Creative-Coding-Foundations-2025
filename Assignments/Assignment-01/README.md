@@ -10,7 +10,7 @@ Starting from the concept of a pinboard, implement a web page that:
 - allows the switch between two views (at least)
 
 ## Final result
-![Mobile-List-view](/assets/doc/Mobile-List-view.png](https://github.com/lynng-dev/MAInD-Creative-Coding-Foundations-2025/blob/main/Assignments/Assignment-01/assets/doc/Desktop-Card-view.png))
+![Mobile-List-view](https://github.com/lynng-dev/MAInD-Creative-Coding-Foundations-2025/blob/main/Assignments/Assignment-01/assets/doc/Desktop-Card-view.png))
 ![Mobile-Card-view](/assets/doc/Mobile-Card-view.png)
 ![Desktop-List-view](/assets/doc/Desktop-List-view.png)
 ![Desktop-Card-view](/assets/doc/Desktop-Card-view.png)
