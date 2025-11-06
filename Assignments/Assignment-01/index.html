@@ -12,24 +12,42 @@
     <header>
         <h1>My Food Journal</h1>
         <!-- Input & add button-->
-         <div id="add-container">
-        <input type="text" id="text-input" placeholder="Enter text here">
-        <button id="add-btn">+</button>
-         </div>
-
+        <form id="add-meal-form">
+            <div id="add-container">
+                <label for="meal-name">Meal name</label>
+                <input type="text" id="meal-name" placeholder="Add new Meal">
+            </div>
+            <div>
+                <label for="meal-img">Add image</label>
+                <input type="file" id="meal-img" accept="image/*" required> 
+            </div>
+            <div>
+                <label for="meal-tag">Category</label>
+                <select id="meal-tag">
+                    <option value="healthy">Healthy 🥗</option>
+                    <option value="quick">Quick & Easy 🍕</option>
+                    <option value="dessert">Dessert 🍪</option>
+                </select>
+            </div>
+            <button type="submit" id="add-btn">Add</button>
+        </form>
          <!-- view list mode toggle -->
-        <nav>
-            <button id="list-btn">List view</button>
-            <button id="grid-btn">Grid view</button>
-        </nav>
+        <div id="view-toggle-container">
+            <button id="list-btn" class="toggle-btn">List view</button>
+            <button id="grid-btn" class="toggle-btn active">Grid view</button>
+        </div>
     </header>
     <main>
-         <!-- list -->
-         <!-- toggle between "card-view" & "list-view" class-->
-        <ul id="" class="">
-            <li>
-                <p>displayed user input</p>
-                <button id="reset-btn">resest/delete</button>
+         <!-- list/grid -->
+         <!-- toggle between grid-view & list-view class-->
+        <ul id="meal-container" class="grid">
+            <li class="meal-card">
+                <img src="assets/images/Caesar-Salad.jpg" alt="Caesar Salad">
+                <div class="meal-content">
+                    <h3>Caesar Salad</h3>
+                    <span class="tag tag-healthy">Healthy 🥗</span>
+                </div>
+                <button class="remove-btn">x</button>
             </li>
         </ul>
     </main>

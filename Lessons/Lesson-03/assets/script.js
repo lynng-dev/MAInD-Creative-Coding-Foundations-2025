@@ -1,7 +1,8 @@
 //butttons
 const addButton = document.getElementById('add-btn');
 const listButton = document.getElementById('list-view-btn');
-const cardButton = document.getElementById('card-view-btn');
+const cardButton = document.getElementById('grid-view-btn');
+const removeButton = document.getElementById('remove-btn');
 
 //elements
 const taskInput = document.getElementById('task-input');
