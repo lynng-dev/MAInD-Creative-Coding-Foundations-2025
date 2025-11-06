@@ -50,34 +50,41 @@
 // }
 
 //four
-let grade = 0; // 0 ... 6,4 is passed
+// let grade = 0; // 0 ... 6,4 is passed
 
 
-if (grade ==6){
-    console.log("Excellent");
-}
-else if (grade >=5 && grade < 6){
-    console.log("Good")
-}
-else if (grade ==4 && grade <5){
-    console.log("Sufficient")
-}
-else if (grade > 6 || grade < 1){
-    console.log("Impossibol - wrong grade")
-}
-else {
-    console.log("Insufficient")
-}
+// if (grade ==6){
+//     console.log("Excellent");
+// }
+// else if (grade >=5 && grade < 6){
+//     console.log("Good")
+// }
+// else if (grade ==4 && grade <5){
+//     console.log("Sufficient")
+// }
+// else if (grade > 6 || grade < 1){
+//     console.log("Impossibol - wrong grade")
+// }
+// else {
+//     console.log("Insufficient")
+// }
 
 
-switch(grade){
-    case 6:
-        console.log("Excellent");
-        breaj;
-    case 5: 
-        console.log("Good")
+// switch(grade){
+//     case 6:
+//         console.log("Excellent");
+//         breaj;
+//     case 5: 
+//         console.log("Good")
 
-    default:
-        console.log("undefined");
-        break;
+//     default:
+//         console.log("undefined");
+//         break;
+// }
+
+// five - for
+let number = 0;
+
+for(let number = 0; number < 1000; number++) {
+    console.log(number);
 }
