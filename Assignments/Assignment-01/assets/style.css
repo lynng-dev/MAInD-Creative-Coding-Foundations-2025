@@ -18,7 +18,7 @@ input, button, select {
     margin-bottom: 0.3rem;
     padding: 0;
     border: none;
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 243);
     color: black;
     outline: none;
     box-sizing: border-box;
@@ -103,7 +103,7 @@ button:hover{
 }
 .toggle-btn.active {
     background-color: black;
-    color: whitesmoke;
+    color: rgb(243, 248, 252);
     font-weight: bold;
 }
 
