@@ -12,9 +12,9 @@ Choose a “mini-game” to rebuild with HTML, CSS and JavaScript. The requireme
 - Implement an “automatic restart” in the game (that is not done via the refresh of the page)
 
 ## Final result
-![Desktop-List-view](./assets/doc/Desktop-List-view.png)
+![Desktop-Start-Page-view](./DOCS/star-page.png)
 
-![Desktop-Card-view](./assets/doc/Desktop-Card-view.png)
+![Desktop-Game-Doodlette-view](./DOCS/game-character2.png)
 
 ## Project description
 "Doodle Jump", is an app from 2009, is a simple, endless jumping game with a hand-drawn look. The goal is to jump on platforms and keep climbing, making sure not to fall down.
