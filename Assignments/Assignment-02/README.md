@@ -12,7 +12,7 @@ Choose a “mini-game” to rebuild with HTML, CSS and JavaScript. The requireme
 - Implement an “automatic restart” in the game (that is not done via the refresh of the page)
 
 ## Final result
-![Desktop-Start-Page-view](./DOCS/star-page.png)
+![Desktop-Start-Page-view]([./DOCS/star-page.png](https://github.com/lynng-dev/MAInD-Creative-Coding-Foundations-2025/blob/main/Assignments/Assignment-02/DOCS/Screenshot%20final%20result/start-page.png?raw=true))
 
 ![Desktop-Game-Doodlette-view](./DOCS/game-character2.png)
 
