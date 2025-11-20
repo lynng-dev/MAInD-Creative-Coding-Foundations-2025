@@ -1,4 +1,4 @@
-# Assignment 01 - Doodle Jump Game
+# Assignment 02 - Doodle Jump Game
 
 ## Brief
 
@@ -26,7 +26,37 @@ Choose a “mini-game” to rebuild with HTML, CSS and JavaScript. The requireme
 ## Block diagram
 
 ```mermaid
-    graph TD
+    gflowchart TD
+    A[Start Page] --> B[Select Character: Doodler / Doodlette]
+    B --> C[Click Start Button]
+    C --> D[Game Canvas Displayed]
+    D --> E[Initialize Game Variables]
+    E --> F[Place Initial Platforms (11 total, first platform fixed)]
+    F --> G[Game Loop: update()]
+
+    G --> H[Clear Canvas]
+    H --> I[Move Doodler]
+    I --> J[Apply Gravity & Velocity]
+    J --> K[Check Horizontal Wrap]
+    K --> L[Draw Doodler]
+    L --> M[Draw Platforms with Base.png]
+    
+    M --> N{Collision?}
+    N -->|Yes| O[Reset velocityY to jump value, play jump sound]
+    N -->|No| P[Continue falling]
+    
+    P --> Q[Update Score]
+    Q --> R[Check for Game Over]
+    R -->|Yes| S[Display "Game Over" message, press Space to restart, play fall sound]
+    R -->|No| T[Generate New Platforms if needed]
+    
+    S --> C[Press Space: Restart Game]
+    T --> G[Next Frame]
+
+    %% Additional Interactions
+    B -->|Character selected| D
+    C -->|Start Game| G
+
         
 ```
 ## Function
