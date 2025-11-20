@@ -26,39 +26,19 @@ Choose a “mini-game” to rebuild with HTML, CSS and JavaScript. The requireme
 ## Block diagram
 
 ```mermaid
-    graph TD
-    %% Start Page
-    A[Start Page] --> B[Select Character: Doodler / Doodlette]
-    B --> C[Click Start Button]
-
-    %% Game Initialization
-    C --> D[Show Game Canvas]
-    D --> E[Initialize Game Variables]
-    E --> F[Place Initial Platforms (11 total, first platform fixed)]
-
-    %% Game Loop
-    F --> G[Game Loop: update()]
-
-    G --> H[Clear Canvas]
-    H --> I[Move Doodler based on velocityX & key input]
-    I --> J[Apply Gravity & Update velocityY]
-    J --> K[Horizontal Wrap Check]
-    K --> L[Draw Doodler]
-    L --> M[Draw Platforms with Base.png]
-
-    %% Collision & Score
-    M --> N{Collision with Platform?}
-    N -->|Yes| O[Reset velocityY to jump value & play jump sound]
-    N -->|No| P[Continue falling]
-
-    P --> Q[Update Score]
-    Q --> R{Game Over?}
-    R -->|Yes| S[Display "Game Over" & Space to Restart, play fall sound]
-    R -->|No| T[Generate New Platforms if needed]
-
-    %% Restart
-    S --> C[Press Space: Restart Game]
-    T --> G[Next Frame]
+    flowchart TB
+    A["Start Page"] --> B["Select Character"]
+    B --> C["Click Start"]
+    C --> D["Character Jumps / Falls"]
+    D --> E{"Collision with Platform?"}
+    E -- Yes --> F["Character Jumps Up"]
+    F --> G["Update Score & Add Platforms"]
+    G --> D
+    E -- No --> H["Continue Falling"]
+    H --> I{"Game Over?"}
+    I -- Yes --> J["Press Space to Restart OR Reset Button"]
+    J --> A
+    I -- No --> D
 ```
 ## Function
 
