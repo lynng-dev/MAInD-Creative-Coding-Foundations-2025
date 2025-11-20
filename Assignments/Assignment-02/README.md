@@ -12,16 +12,12 @@ Choose a “mini-game” to rebuild with HTML, CSS and JavaScript. The requireme
 - Implement an “automatic restart” in the game (that is not done via the refresh of the page)
 
 ## Final result
-![Mobile-List-view](https://github.com/lynng-dev/MAInD-Creative-Coding-Foundations-2025/blob/main/Assignments/Assignment-01/assets/doc/Mobile-List-view.png)
+![Desktop-List-view](./assets/doc/Desktop-List-view.png)
 
-![Mobile-Card-view](https://github.com/lynng-dev/MAInD-Creative-Coding-Foundations-2025/blob/main/Assignments/Assignment-01/assets/doc/Mobile-Card-view.png)
-
-![Desktop-List-view](https://github.com/lynng-dev/MAInD-Creative-Coding-Foundations-2025/blob/main/Assignments/Assignment-01/assets/doc/Desktop-List-view.png)
-
-![Desktop-Card-view](https://github.com/lynng-dev/MAInD-Creative-Coding-Foundations-2025/blob/main/Assignments/Assignment-01/assets/doc/Desktop-Card-view.png)
+![Desktop-Card-view](./assets/doc/Desktop-Card-view.png)
 
 ## Project description
-"Doodle" is a mobile app game.
+"Doodle Jump", is an app from 2009, is a simple, endless jumping game with a hand-drawn look. The goal is to jump on platforms and keep climbing, making sure not to fall down. I recreated this mini-game! You move left and right using the arrow keys or the A and D keys.
 
 ## Block diagram
 
