@@ -1,90 +1,54 @@
-# Assignment 01 - My Food Journal
+# Assignment 02 - Doodle Jump Game
 
 ## Brief
 
-Starting from the concept of a pinboard, implement a web page that:
+Choose a “mini-game” to rebuild with HTML, CSS and JavaScript. The requirements are:
 
-- is responsive (properly layout for smartphone, tablet, and desktop)
-- allows the user to add and remove elements
-- allows the user to customize elements (i.e. colors, size)
-- allows the switch between two views (at least)
+- The webpage should be responsive
+- Choose an avatar at the beginning of the game
+- Keep track of the score of the player
+- Use the keyboard to control the game (indicate what are the controls in the page). You can also use buttons (mouse), but also keyboard.
+- Use some multimedia files (audio, video, …)
+- Implement an “automatic restart” in the game (that is not done via the refresh of the page)
 
 ## Final result
-![Mobile-List-view](https://github.com/lynng-dev/MAInD-Creative-Coding-Foundations-2025/blob/main/Assignments/Assignment-01/assets/doc/Mobile-List-view.png)
+![Desktop-List-view](./assets/doc/Desktop-List-view.png)
 
-![Mobile-Card-view](https://github.com/lynng-dev/MAInD-Creative-Coding-Foundations-2025/blob/main/Assignments/Assignment-01/assets/doc/Mobile-Card-view.png)
-
-![Desktop-List-view](https://github.com/lynng-dev/MAInD-Creative-Coding-Foundations-2025/blob/main/Assignments/Assignment-01/assets/doc/Desktop-List-view.png)
-
-![Desktop-Card-view](https://github.com/lynng-dev/MAInD-Creative-Coding-Foundations-2025/blob/main/Assignments/Assignment-01/assets/doc/Desktop-Card-view.png)
+![Desktop-Card-view](./assets/doc/Desktop-Card-view.png)
 
 ## Project description
-"My Food Journal" is a web application designed for users to easily track, categorize, and visualize their meals. Built purely with HTML, custom CSS, and JavaScript, the application focuses on providing a clean, responsive, and intuitive interface for quick data entry and meal management.
+"Doodle Jump", is an app from 2009, is a simple, endless jumping game with a hand-drawn look. The goal is to jump on platforms and keep climbing, making sure not to fall down. I recreated this mini-game! You move left and right using the arrow keys or the A and D keys.
 
 ## Block diagram
 
 ```mermaid
-    graph TD
-        A[index.html] --> B(Body);
-        
-        B --> C(Header);
-        B --> D(Main Content);
-        
-        subgraph User Input & Controls
-            C --> C1(Form: #add-meal-form);
-            C --> C2(Div: #view-toggle-container);
-            
-            C1 --> C1a[Input: Name];
-            C1 --> C1b[Input: Image File];
-            C1 --> C1c[Select: Tag];
-            C1 --> C1d[Button: Add meal];
-            
-            C2 --> C2a[Button: List View];
-            C2 --> C2b[Button: Grid View];
-        end
-        
-        subgraph Meal Display Area
-            D --> D1(UL: #meal-container);
-            D1 --> D1a(<li class="meal-card">);
-            
-            D1a --> D1a1[Image];
-            D1a --> D1a2[Details: Title/Tag];
-            D1a --> D1a3[Button: .remove-btn];
-        end
-        
-        subgraph JavaScript Logic Flow
-            C1d -.->|FileReader + Append| D1;
-            C2a & C2b -.->|Toggle Class| D1;
-            D1a3 -.->|Event Delegation| D1;
-        end
+    flowchart TB
+    A["Start Page"] --> B["Select Character"]
+    B --> C["Click Start"]
+    C --> D["Character Jumps / Falls"]
+    D --> E{"Collision with Platform?"}
+    E -- Yes --> F["Character Jumps Up"]
+    F --> G["Update Score & Add Platforms"]
+    G --> D
+    E -- No --> H["Continue Falling"]
+    H --> I{"Game Over?"}
+    I -- Yes --> J["Press Space to Restart OR Reset Button"]
+    J --> A
+    I -- No --> D
 ```
-## Function
+## Functions
 
-##### listButton.clickHandler
-- Argument: none
-- Description: toggles the display mode of the #meal-container to list-view. It removes the grid-view class, adds the list-view & updates the active state of the toggle buttons.
-- Returns: none
+##### generatePlatforms
+- Parameters: none
+- Expression logic: initializes the platforms array. It first adds a starting platform near the bottom center of the canvas. Then, it iterates to add the remaining platforms (totalPlatforms - 1), placing them at random horizontal positions and stacked vertically above the previous one with a 50-pixel gap.
+- Return values: none (modifies the global platforms array)
 
-##### gridButton.clickHandler
-- Argument: none
-- Description: toggles the display mode of the #meal-container to grid-view. It removes the list-view class, adds the grid-view & updates the active state of the toggle buttons.
-- Returns: none
+##### detectCollision
+- Parameters: player, platform
+- Expression logic: checks if the player object (Doodler) is colliding with the platform object. Specifically, it uses bounding box collision logic and also requires that the Doodler is moving downwards (velocityY > 0), ensuring collision only occurs when falling onto a platform from above.
+- Return values: a boolean (true if collision is detected under the specified conditions, false otherwise)
 
-##### addForm.submitHandler
-- Argument: event
-- Description: handles the form submission. It calls event.preventDefault() to stop the page from reloading and then executes the addMeal() function.
-- Returns: none
-  
-##### mealContainer.clickHandler
-- Argument: event
-- Description: It listens for any click within the meal container. If the clicked element is a .remove-btn, it finds the closest parent <li> (the meal card) and removes it from the DOM.
-- Returns: none
-- 
-##### add.Meal
-- Argument: none
-- Description: The main function for creating and adding a new meal card. It reads form data, checks for a file input, and uses the FileReader API to convert the local image file into a Data URL for immediate display in the <img> tag. Finally, it resets the form.
-- Returns: return (--> exits the function) if the imgInput does not contain a file, after showing an alert.
-
-## Content & data sources
-none
-  
+##### update
+- Parameters: none
+- Expression logic: this is the main game loop function, typically called using requestAnimationFrame. It clears the canvas, updates the Doodler's position based on velocityX and gravity-affected velocityY. It checks for collisions, scrolls platforms and updates the score if the Doodler goes above the screen center, draws the Doodler and platforms, manages platform creation/removal, and checks for the game over condition (Doodler falls off the bottom).
+- Return values: none (calls itself recursively via requestAnimationFrame)
