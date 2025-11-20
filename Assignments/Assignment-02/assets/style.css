@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body{
+    margin:0;
+    text-align:center;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400;
+}
+
+#game{
+    display:none;
+    background-image: url("./img/background.png");
+    margin: 0 auto;
+}
+
+#start-page{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: white;
+    color: black;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+#start-page h1{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+#start-page p{
+    font-size:18px;
+    margin:10px;
+}
+
+.characters{
+    display:flex;
+    gap:40px;
+    margin:20px;
+}
+
+.character{
+    cursor:pointer;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.character img{
+    width:60px;
+    height:60px;
+    border:3px solid transparent;
+    border-radius:8px;
+    transition:border 0.2s;
+}
+
+.character.selected img{
+    background-color: white;
+    border:3px solid black;
+}
+
+button {
+    margin-top: 20px;
+    padding: 20px 40px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: black; 
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 8px; 
+    box-shadow: 
+        inset 0 0 0 2px #1a1a1a, 
+        8px 8px 0 0 #000000;
+    transition: all 0.1s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(243, 243, 243); 
+}
+
+button:active {
+    box-shadow: 
+        inset 0 0 0 2px #1a1a1a,
+        0 0 0 0 #000000;        
+    transform: translate(8px, 8px); 
+}
