@@ -28,3 +28,10 @@ It is based on the recent core web technologies (HTML, CSS and JavaScript) and t
 Each week, the students will learn and apply new programming principles and techniques in a one-day class that includes the following sessions: a brief individual written test covering all previous topics (which will be evaluated), a lecture on programming delivered by the lecturers, practical exercises supported by the teaching staff, and development of class assignments.
 
 The assignments and the course are designed to build programming experience for the remainder of the master’s program, and the brief written tests allow students to personally assess their understanding and mastery of core fundamental topics.
+
+![Mobile-List-view](/Assignment-01/assets/doc/Mobile-List-view.png](https://github.com/lynng-dev/MAInD-Creative-Coding-Foundations-2025/blob/main/Assignments/Assignment-01/assets/doc/Desktop-Card-view.png))
+![Mobile-Card-view](/Assignment-01/assets/doc/Mobile-Card-view.png)
+![Desktop-List-view](/Assignment-01/assets/doc/Desktop-List-view.png)
+![Desktop-Card-view](/Assignment-01/assets/doc/Desktop-Card-view.png)
+
+[<img src="/Assignment-01/assets/doc/Mobile-List-view.png" />]()
