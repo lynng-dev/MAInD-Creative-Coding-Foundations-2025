@@ -14,7 +14,7 @@ Choose a “mini-game” to rebuild with HTML, CSS and JavaScript. The requireme
 ## Final result
 ![Desktop-Start-Page-view]([./DOCS/star-page.png](https://github.com/lynng-dev/MAInD-Creative-Coding-Foundations-2025/blob/main/Assignments/Assignment-02/DOCS/Screenshot%20final%20result/start-page.png?raw=true))
 
-![Desktop-Game-Doodlette-view](./DOCS/game-character2.png)
+![Desktop-Game-Doodlette-view]([./DOCS/game-character2.png](https://github.com/lynng-dev/MAInD-Creative-Coding-Foundations-2025/blob/main/Assignments/Assignment-02/DOCS/Screenshot%20final%20result/game-character2.png?raw=true))
 
 ## Project description
 "Doodle Jump", is an app from 2009, is a simple, endless jumping game with a hand-drawn look. The goal is to jump on platforms and keep climbing, making sure not to fall down.
