@@ -17,7 +17,10 @@ Choose a “mini-game” to rebuild with HTML, CSS and JavaScript. The requireme
 ![Desktop-Card-view](./assets/doc/Desktop-Card-view.png)
 
 ## Project description
-"Doodle Jump", is an app from 2009, is a simple, endless jumping game with a hand-drawn look. The goal is to jump on platforms and keep climbing, making sure not to fall down. I recreated this mini-game! You move left and right using the arrow keys or the A and D keys.
+"Doodle Jump", is an app from 2009, is a simple, endless jumping game with a hand-drawn look. The goal is to jump on platforms and keep climbing, making sure not to fall down.
+
+I recreated this mini-game with my own touches! 
+You move left and right using the arrow keys or the A and D keys.
 
 ## Block diagram
 
