@@ -1,13 +1,15 @@
-# Assignment 01 - My Food Journal
+# Assignment 01 - Doodle Jump Game
 
 ## Brief
 
-Starting from the concept of a pinboard, implement a web page that:
+Choose a “mini-game” to rebuild with HTML, CSS and JavaScript. The requirements are:
 
-- is responsive (properly layout for smartphone, tablet, and desktop)
-- allows the user to add and remove elements
-- allows the user to customize elements (i.e. colors, size)
-- allows the switch between two views (at least)
+- The webpage should be responsive
+- Choose an avatar at the beginning of the game
+- Keep track of the score of the player
+- Use the keyboard to control the game (indicate what are the controls in the page). You can also use buttons (mouse), but also keyboard.
+- Use some multimedia files (audio, video, …)
+- Implement an “automatic restart” in the game (that is not done via the refresh of the page)
 
 ## Final result
 ![Mobile-List-view](https://github.com/lynng-dev/MAInD-Creative-Coding-Foundations-2025/blob/main/Assignments/Assignment-01/assets/doc/Mobile-List-view.png)
@@ -19,44 +21,13 @@ Starting from the concept of a pinboard, implement a web page that:
 ![Desktop-Card-view](https://github.com/lynng-dev/MAInD-Creative-Coding-Foundations-2025/blob/main/Assignments/Assignment-01/assets/doc/Desktop-Card-view.png)
 
 ## Project description
-"My Food Journal" is a web application designed for users to easily track, categorize, and visualize their meals. Built purely with HTML, custom CSS, and JavaScript, the application focuses on providing a clean, responsive, and intuitive interface for quick data entry and meal management.
+"Doodle" is a mobile app game.
 
 ## Block diagram
 
 ```mermaid
     graph TD
-        A[index.html] --> B(Body);
         
-        B --> C(Header);
-        B --> D(Main Content);
-        
-        subgraph User Input & Controls
-            C --> C1(Form: #add-meal-form);
-            C --> C2(Div: #view-toggle-container);
-            
-            C1 --> C1a[Input: Name];
-            C1 --> C1b[Input: Image File];
-            C1 --> C1c[Select: Tag];
-            C1 --> C1d[Button: Add meal];
-            
-            C2 --> C2a[Button: List View];
-            C2 --> C2b[Button: Grid View];
-        end
-        
-        subgraph Meal Display Area
-            D --> D1(UL: #meal-container);
-            D1 --> D1a(<li class="meal-card">);
-            
-            D1a --> D1a1[Image];
-            D1a --> D1a2[Details: Title/Tag];
-            D1a --> D1a3[Button: .remove-btn];
-        end
-        
-        subgraph JavaScript Logic Flow
-            C1d -.->|FileReader + Append| D1;
-            C2a & C2b -.->|Toggle Class| D1;
-            D1a3 -.->|Event Delegation| D1;
-        end
 ```
 ## Function
 
