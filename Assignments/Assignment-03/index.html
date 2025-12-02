@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doodle Jump Game</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- start page -->
+<div id="start-page">
+    <h1>Doodle Jump Game, 2009</h1>
+    <p>Use <strong>Arrow keys / A & D</strong> to move left and right</p>
+
+    <div class="characters">
+        <div class="character selected" id="doodler-choice" data-character="doodler">
+            <img src="./assets/img/doodler-right.png" alt="Doodler">
+            <span>Doodler</span>
+        </div>
+        <div class="character" id="doodlette-choice" data-character="doodlette">
+            <img src="./assets/img/doodlette-right.png" alt="Doodlette">
+            <span>Doodlette</span>
+        </div>
+    </div>
+
+    <button id="start-btn">Start Game</button>
+</div>
+
+<!-- game canvas -->
+<canvas id="game"></canvas>
+
+<div id ="joke-overlay">
+    <p id="joke-text"></p>
+</div>
+
+<!-- reset-btn -->
+<button id="resetBtn" style="display:none;">Reset</button>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
