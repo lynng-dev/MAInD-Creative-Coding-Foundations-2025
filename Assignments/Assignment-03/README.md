@@ -12,9 +12,9 @@ The application **must** have those requirements:
 - Develop a navigation system that allows the user to navigate different sections with related content and functionalities
 
 ## Final result
-![Desktop-List-view](./assets/DOCS/Desktop-List-view.png)
+![Start Game page](./DOCS/Screenshot final result/start-page.png)
 
-![Desktop-Card-view](./assets/DOCS/Desktop-Card-view.png)
+![API Pop-up](./DOCS/Screenshot final result/API-popup.png)
 
 ## Project description
 "Doodle Jump", is an app from 2009, is a simple, endless jumping game with a hand-drawn look. The goal is to jump on platforms and keep climbing, making sure not to fall down.
